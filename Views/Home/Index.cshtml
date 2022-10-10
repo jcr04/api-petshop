@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Petshop"] = "Home Page";
+}
+
+
+<div class="text-center">
+        <h1 class="display-4">Clientes</h1>
+        <ul>
+            @foreach (var cliente in ViewBag.clientes)
+        {
+            <li>
+                <div>Nome: @cliente.Nome</div>
+                <div>CPF: @cliente.CPF</div>
+                <div>Email: @cliente.Email</div>
+            </li>
+        }
+        </ul>
+</div>
